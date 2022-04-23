@@ -49,13 +49,13 @@ Lego clone website built with Node and React
 Clone the project
 
 ```bash
-  git clone https://github.com/ma7moudemam/Lego-ITI-Graduation-Project.git
+  git clone https://github.com/KarimShahin/Lego.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Lego-ITI-Graduation-Project
+  cd directory_name
 ```
 
 Install dependencies
