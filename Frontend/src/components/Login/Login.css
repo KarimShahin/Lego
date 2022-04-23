@@ -1,0 +1,299 @@
+.auth-wrapper {
+  background: #f2f5f7;
+  font-family: "CeraProLight", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-container {
+  background-color: #f2f5f7;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.login-container .header {
+  background-color: #ffcf00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.login-container .header .title {
+  margin-left: auto;
+}
+
+.login-container .header .close {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.login-container .logo {
+  margin: 2rem 0;
+}
+
+.login-container .logo img {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.login-container .lego-form {
+  padding: 0 2rem;
+}
+
+.login-container .lego-form div {
+  margin-bottom: 8px;
+}
+
+/* .login-container .lego-form label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+} */
+
+.login-container .lego-form input[type="text"],
+.login-container .lego-form input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.login-container input {
+  background-color: #fff;
+}
+
+.login-container .lego-form .remember-me {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+}
+
+.login-container .lego-form .logout-advice {
+  padding: 0 1rem;
+  font-size: 15px;
+  color: #727272;
+}
+
+.login-container .lego-form .login-button {
+  background-color: #006cb6;
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  margin: 2rem auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+.login-container .lego-form .login-button:hover {
+  background-color: #004584;
+}
+
+.login-container .forgetting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem 0;
+  font-family: "CeraProBold";
+  font-size: 0.9rem;
+}
+
+.login-container .forgetting a {
+  display: block;
+  margin: 0 5px;
+  color: #006cb6;
+  text-decoration: none;
+}
+
+.login-container .forgetting a:hover {
+  color: #004584;
+}
+
+.login-container a {
+  display: block;
+  margin: 0 5px;
+  color: #006cb6;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  color: #004584;
+}
+
+.login-container .go-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "CeraProBold";
+}
+
+.login-container .header .signup-title {
+  margin: 0;
+}
+
+.login-container .login-suPage {
+  padding: 1rem 0px;
+  text-align: center;
+}
+
+.login-container .login-suPage h2 {
+  font-family: "CeraProBold";
+  margin-bottom: 1rem;
+}
+
+.login-container .login-suPage a {
+  font-family: "CeraProBold";
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.login-container .login-suPage .divider {
+  position: relative;
+  margin: 0px 40px;
+}
+
+.login-container .login-suPage .divider:after,
+.login-container .login-suPage .divider:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  border-top: 2px double #badbf4;
+  display: block;
+  width: 50%;
+}
+
+.login-container .login-suPage .divider:after {
+  right: 0;
+}
+
+.login-container .login-suPage .divider span {
+  position: relative;
+  z-index: 5;
+  background: #f2f5f7;
+  padding: 0 15px;
+}
+
+.login-container .signup-logo {
+  text-align: center;
+}
+
+.login-container .signup-logo img {
+  width: 70%;
+}
+
+.login-container .birth-date label {
+  font-size: 15px;
+}
+
+.login-container label.birthDate {
+  font-size: 15px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.login-container .birth-date .signup-flex-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+/* .login-container .birth-date .signup-flex-date label {
+  margin: 15px 0 0;
+  color: #333;
+} */
+
+.login-container .birth-date .signup-flex-date div input {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.login-container .birth-date .signup-flex-date input::-webkit-outer-spin-button,
+.login-container
+  .birth-date
+  .signup-flex-date
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-container .birth-date .signup-flex-date input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.login-container .countries {
+  position: relative;
+}
+
+.login-container .countries select {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.login-container .countries span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 54%;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.login-container .countries span img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .login-container {
+    border: 4px solid #fff;
+    max-width: 495px;
+    margin: 0 auto;
+  }
+}

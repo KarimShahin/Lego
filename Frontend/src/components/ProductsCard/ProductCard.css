@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --font-size: 1rem;
+   --font-weight: bold;
+   --border: 1px solid gainsboro;
+   --font-color:gainsboro;
+}
+
+* {
+    font-family: "CeraProMedium";
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.filter-btn{
+    display: none;
+}
+
+.shop-container {
+    padding-inline: 30px;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs {
+    width: 100%;
+}
+/******************** breadcrumb-navigator ********************/
+
+.breadcrumb-navigator{
+    width: 90vw;
+    padding: 0.8rem 0;
+    margin: auto;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  list-style-type: none;
+  
+}
+
+ul.breadcrumb li a{
+  color: rgb(153, 153, 255)
+}
+ul.breadcrumb li a:hover{
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 0.5rem;
+  opacity: 0.5;
+  color: black;
+  content: "\003E";
+  list-style-type: none;
+}
+
+/******************** Shop Now ********************/
+
+.shop-now{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 1rem;
+}
+
+/******************** filter ********************/
+
+
+.cards {
+    width: 75%;
+    flex-grow: 1;
+    height: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 100%;
+}
+
+/******************** cards ********************/
+
+
+
+/******************** dropDown ********************/
+
+.cards-header-section{
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dropbtn {
+    text-align:center;
+    line-height: 1.5;
+    color: black;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border: none;
+    border: var(--border);
+    cursor: pointer;
+}
+
+.dropbtn #sortBy {
+    color: var(--font-color);
+}
+
+.dropbtn::before {
+    content: "\02C5";
+    color: black;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    float: right;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    overflow: auto;
+    z-index: 1;
+    border: var(--border);
+    background-color: white;
+}
+
+.dropdown-content a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: black;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/******************** card ********************/
+
+.card{
+    border: var(--border);
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.card .add-to-wishlist {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.card .add-to-wishlist span:nth-child(1) {
+    background-color: #f8f8f8;
+    position: relative;
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.card .add-to-wishlist i {
+    font-size: 1rem;
+    position: absolute;
+    color: #006db7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card .image-container .product-card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: all 250ms ease-in-out;
+}
+
+.card .image-container .product-card-img:hover {
+    transform: scale(1.1);
+}
+
+.card-name {
+    font-family: "CeraProMedium";
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.card-name p {
+    margin-bottom: 0;
+}
+
+.card-name p a {
+    color: #333;
+}
+
+.review-stars-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    margin-block: 0;
+}
+
+.sliding {
+    margin-block-start: 1rem;
+    margin-inline: auto;
+}
+
+.card-price {
+    font-size: 1.125rem;
+    font-family: "CeraProBold";
+}
+
+.card-button-exist {
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #ffcf00;
+    border-radius: 0.5rem;
+    margin-inline: auto;
+    transition: all 250ms ease-in-out;
+}
+
+.card-button-exist:hover {
+    background-color: #ffcf00cc;
+}
+
+.filter {
+    width: 30%;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+@media (max-width:750px) {
+    .shop-now {
+        flex-direction: column;
+    }
+    .shop-now .filter {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1.5rem;
+    }
+    .cards {
+        width: 100%;
+    }
+}

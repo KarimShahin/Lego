@@ -1,0 +1,14 @@
+.accordion-feature-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-feature-header{
+    height: 75vh;
+    width: 100%;
+    background-image: url('../../../assets/imgs/76240_Hero1_Standard_Large.webp');
+}
+
+.accordion-feature-content{
+    display:flex;
+}

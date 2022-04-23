@@ -1,0 +1,59 @@
+.bg-body{
+    background-color: #f8f8f8;
+
+}
+.bg-blue{
+    background-color: rgb(204, 234, 216);
+
+}
+
+.pay-img{
+width: 7%;
+}
+.w-img{
+width: 10%;
+}
+.counter{
+    cursor: pointer;
+    border-right: 1px solid #dee2e6;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.input-code {
+    outline: none;
+    border: none;
+
+}
+.f-14{
+    font-size: 14px;
+}
+
+.f-b{
+    font-weight: 700
+}
+.f-16{
+    font-size: 16px;
+}
+.input-holder{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+.input-button {
+    outline: none;
+   border: 1px solid;
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.f-12{
+    font-size: 12px;
+}
+.input-code::placeholder{
+    padding: 5px;
+}
+.pay{
+    font-weight: 700 !important;
+font-style: italic !important;
+}

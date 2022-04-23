@@ -1,0 +1,20 @@
+.order-status-code {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+#mui-3 {
+  margin: 0;
+}
+.MuiTablePagination-displayedRows {
+  margin-bottom: 0;
+}
+.MuiCardHeader-avatar.css-1ssile9-MuiCardHeader-avatar {
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+.MuiTablePagination-displayedRows {
+  margin-bottom: 0;
+}

@@ -1,0 +1,26 @@
+.recommended{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.recommended .boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 20px;
+    margin: 20px auto;
+    width: 90%;
+    overflow-x: scroll;
+}
+
+.recommended-title{
+    font-weight: 400;
+    font-size: 2rem;
+    color: #333;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+

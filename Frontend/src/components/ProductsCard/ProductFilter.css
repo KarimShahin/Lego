@@ -1,0 +1,62 @@
+#header-filter{
+    border-bottom: 1px solid gainsboro;
+    padding: 1rem 0.5rem ;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#reset-all{
+    background-color: gainsboro;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+}
+
+#done{
+    border: 1px solid blue;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    padding: 0.7rem ;
+}
+
+.container-filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter{
+   height: max-content;
+   display: block;
+}
+
+.dropdown{
+    margin: 0.5rem auto;
+    width: 90vw;
+}
+
+.dropbtn{
+    width: 100%;
+}
+
+.dropbtn:active{
+    background-color: white;
+}
+
+.dropdown-content{
+    width: 100%;
+    background-color: white;
+}
+
+.dropdown:active{
+    background-color: white;
+}
+
+.filter{
+    width: 90vw;
+    margin: auto;
+}
+

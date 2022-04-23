@@ -1,0 +1,89 @@
+/* .button, button:focus{
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+button:active{
+  outline: none;
+  background: transparent;
+  border: 1px solid grey;
+} */
+
+.account-body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f5f7;
+}
+
+.account-border {
+  border: 5px solid white;
+}
+
+.hover-btn:hover {
+  color: blue;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.Logo-img-account {
+  margin-top: 3vh;
+  margin-left: 10vh;
+}
+
+.closing-btn {
+  float: right;
+  padding: 2.7vh;
+  color: black;
+}
+
+.back-arrow {
+  float: left;
+  padding: 2.7vh;
+  color: black;
+}
+
+.inner-back-arrow {
+  color: #000;
+}
+
+.inner-back-arrow:hover {
+  color: #555555cc;
+}
+
+
+.box-styling {
+  margin-top: 16px;
+  color: #333;
+  border: 2px solid #c9c9c9;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.redirect-btn {
+  float: right;
+}
+
+.birthDateLabel {
+  margin-bottom: 2vh;
+}
+
+.update-save-btn{
+  background-color: #ffcf00 !important;
+  color: #000 !important;
+}
+
+.update-save-btn:hover{
+  background-color: #ffcf00cc !important;
+}
+
+.delete-account-btn{
+  background-color: #e3000b !important;
+}
+
+.delete-account-btn:hover {
+  background-color:#e3000bcc !important;
+}

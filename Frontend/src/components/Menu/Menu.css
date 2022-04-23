@@ -1,0 +1,103 @@
+.menu-bar {
+	width: 45vw;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: -45vw;
+	position: fixed;
+    z-index: 100;
+	box-sizing: border-box;
+    height: 100vh;
+	transition: left 250ms ease-in-out;
+}
+
+.open {
+	left: 0;
+}
+
+.menu-bar header {
+	width: 45vw;
+	font-family: "CeraProLight";
+	font-size: 1rem;
+	text-transform: uppercase;
+	position: fixed;
+	display: flex;
+	border-bottom: 2px solid #ffcf00;
+	justify-content: space-between;
+	align-items: center;
+    background-color: #fff;
+}
+
+.menu-bar header div {
+	padding: 1rem;
+    font-family: "ceraProLight";
+}
+
+.menu-bar header a {
+	justify-self: center;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	padding: 1rem 1.25rem;
+	border-left: 1px solid rgb(216, 216, 216);
+}
+
+.menu-bar header a:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.menu-bar .flex-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 3.5rem;
+}
+
+.menu-bar .menu-bar-list {
+	list-style: none;
+	width: 100%;
+	margin-top: 1rem;
+	padding-left: 0;
+}
+
+.menu-bar .menu-bar-list-item {
+	padding: 1rem 2rem;
+	border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.menu-bar .menu-bar-list-item a{
+	width: 100%;
+    font-family: "CeraProLight";
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+}
+
+.menu-bar .menu-bar-list-item a span {
+    font-family: "CeraProLight";
+    font-size: 1rem;
+}
+
+@media (max-width:770px) {
+    .menu-bar {
+		width: 100%;
+		left: -100%;
+	}
+	.open {
+		left: 0;
+	}
+	.menu-bar header {
+		width: 100%;
+		background: #fff;
+	}
+}
+
+@media (max-width:470px) {
+    .menu-bar {
+		width: 100%;
+	}
+	.menu-bar header {
+		width: 100%;
+		background: #fff;
+	}
+}

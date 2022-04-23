@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background: rgb(32, 29, 72) none repeat scroll 0% 0%;
+  color: rgb(255, 255, 255);
+  font-family: "CeraProLight";
+  text-align: left;
+}
+.socialmedia-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2.5rem 1rem;
+}
+.socialmedia-wrapper h6 {
+  font-family: "CeraProMedium";
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.logo-region{
+  width: 100px;
+  height: 100px;
+}
+.logo-region img {
+  display: inline-block;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  font-size: 1.3rem;
+}
+.social-icons .icon {
+  background-color: #121029;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons .icon i {
+  font-size: 1.3rem;
+}
+
+.social-icons .insta {
+  position: relative;
+  background-image: linear-gradient(to top right, #121029, #121029);
+}
+.social-icons .insta i {
+  z-index: 2;
+  position: relative;
+}
+.social-icons .insta::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top right,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.social-icons .fa:hover {
+  background-color: #4867aa;
+}
+.social-icons .tw:hover {
+  background-color: #5da9dd;
+}
+.social-icons .insta:hover::before {
+  opacity: 1;
+}
+.social-icons .yout:hover {
+  background-color: #fe0000;
+}
+
+.footer-copyright {
+  padding: 2rem 0;
+  background-color: #121029;
+  text-align: center;
+}
+.column h4 {
+  position: relative;
+}
+.column h4 img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 770px) {
+  .footer-container {
+    flex-flow: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .column {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  .col-logo {
+    border: 0;
+    padding: 0 20px;
+  }
+  .logo-region {
+    display: flex;
+    gap: 25px;
+  }
+  .column .region {
+    margin: 0;
+    display: block;
+    text-align: center;
+    height: 55px;
+    line-height: 2;
+  }
+  .column h4 {
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .column h4 img {
+    visibility: visible;
+  }
+  .footer-container .column {
+    overflow: hidden;
+  }
+  .footer-container .column ul {
+    padding: 5px 20px;
+    max-height: 0;
+  }
+  .subscription .email input {
+    width: 100%;
+  }
+  .subscription .email button {
+    right: 0;
+  }
+  .socialmedia-wrapper {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+.footer-container .column-ul-active ~ ul {
+  max-height: 220px;
+  /* height: 100%;
+    transform: scaleY(1); */
+}
+.column-ul-active img {
+  transform: rotate(180deg);
+}
+footer .region i {
+  display: inline-block;
+  margin-right: 7px;
+}

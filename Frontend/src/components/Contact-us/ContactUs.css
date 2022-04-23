@@ -1,0 +1,7 @@
+.contact-us {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 10rem;
+    flex-wrap: wrap;
+}

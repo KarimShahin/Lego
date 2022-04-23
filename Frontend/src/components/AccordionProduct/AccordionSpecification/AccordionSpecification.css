@@ -1,0 +1,19 @@
+.acc-specification-container{
+    display: flex;
+    margin:30px;
+    gap: 50px;
+}
+
+.acc-specification-content p{
+    font-size: 14px;
+    color:#555;
+}
+
+.acc-specification-content ul{
+    list-style: disc;
+}
+
+.acc-specification-content ul li{
+    margin-top:20px;
+    color:#555;
+}

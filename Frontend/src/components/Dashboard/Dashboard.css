@@ -1,0 +1,92 @@
+.css-lfwcke-MuiTabs-flexContainer button {
+  min-width: auto;
+}
+.MuiBox-root .css-19kzrtu {
+  padding: 0 !important;
+}
+.MuiCardHeader-avatar.css-1ssile9-MuiCardHeader-avatar {
+  width: 100%;
+  justify-content: center;
+}
+.admin-product-card label {
+  display: inline-block;
+  margin-right: 15px;
+}
+.user-state {
+  position: absolute;
+  top: 20px;
+  z-index: 10;
+  right: 10px;
+  border: 1px solid #b6b6b6;
+  color: #000;
+  background-color: #ececec99;
+  padding: 0.5em 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+.user-state span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #e90000;
+}
+.order-status-code {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.add-shipper-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+#use-autocomplete-demo {
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 7px;
+  padding: 0 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 12;
+  position: relative;
+}
+#use-autocomplete-demo-listbox {
+  width: 50%;
+  left: 45%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  overflow: hidden;
+  top: 70px;
+}
+#use-autocomplete-demo-listbox li {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.25s ease;
+}
+#use-autocomplete-demo-listbox li:hover {
+  background-color: #c4c4c4;
+}
+.product-search-wrapper {
+  width: 50%;
+}
+/* .MuiOutlinedInput-root
+  .MuiInputBase-root
+  .MuiInputBase-colorPrimary
+  .MuiInputBase-formControl
+  .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  height: 50px;
+  width: 120px;
+} */
+#mui-3 {
+  margin: 0;
+}
+.MuiTablePagination-displayedRows {
+  margin-bottom: 0;
+}

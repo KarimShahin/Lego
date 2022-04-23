@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "CeraProMedium";
+}
+
+@font-face {
+  font-family: "CeraProMedium";
+  src: url("./assets/fonts/Cera\ Pro\ Medium.otf");
+}
+
+@font-face {
+  font-family: "CeraProBold";
+  src: url("./assets/fonts/Cera\ Pro\ Bold.otf");
+}
+
+@font-face {
+  font-family: "CeraProLight";
+  src: url("./assets/fonts/Cera\ Pro\ Light.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "CeraProMedium", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

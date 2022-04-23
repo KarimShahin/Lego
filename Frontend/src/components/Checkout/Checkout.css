@@ -1,0 +1,47 @@
+.checkout {
+    padding: 5rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.checkout h2 {
+    font-size: 2.5rem;
+}
+.checkout h3 {
+    font-size: 2rem;
+}
+
+.checkout h4 {
+    margin: 0.5rem 0 1.5rem;
+}
+
+.checkout input {
+    width: 300px;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    border: 0;
+    border: 1px solid #767676;
+    border-radius: 0.25rem;
+}
+
+.checkout input:focus {
+    outline: none;
+}
+
+.checkout .checkout-button {
+    width: 200px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    background-color: #ffcf00;
+    margin: 1.5rem auto 1rem;
+}
+
+.checkout button:hover {
+    background-color: #ffcf00cc;
+}
+
+.checkout-button {
+    border: none;
+    color: white;
+}

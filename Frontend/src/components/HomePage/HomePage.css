@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+}
+
+.card-header-spotlight h2 span, .left-side h2 span{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.text-container h3 span{
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    font-family: CeraProLight;
+    text-decoration: none;
+    color: black;
+}
+
+.text-container span{
+    color: black;
+}
+
+.card-content{
+    text-decoration: none;
+    color: black;
+}
+
+/*****************Varible****************/
+
+:root{
+    --span-font-size:0.8rem;
+
+    --p-font-size: 0.7rem;
+    --h2-font-size: 5rem;
+
+    --margin-right: 1rem;
+    --margin-bottom: 1rem;
+
+    --section-margin: 1rem auto;
+    --section-padding: 2.5rem 1.25rem;
+
+}
+
+/**************container**************/
+
+.home-page-container{
+    width: 90vw;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/************* Keep-in-touch ***************/
+
+.keep-in-touch-container {
+    width: 100%;
+    padding:1rem;
+    background-color: #f5f5f5;
+}
+
+.keep-in-touch-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side-content .shop-now-btn {
+    padding: 1rem 2rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    color: #fff;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    width: max-content;
+    margin-inline: auto;
+}
+
+.left-side-content .shop-now-btn:hover {
+    text-decoration: underline;
+}
+
+.right-side-content {
+    width: 100%;
+}
+
+.right-side-content img {
+    width: 100%;
+}
+
+
+/************* Spotlight On ***************/
+
+.spotlight-on-container {
+    width:100%;
+}
+
+.spotlight-on-container .card-section {
+    width: 100%;
+    padding: 1rem;
+}
+
+.spotlight-on-container .card-container {
+    width: 100%;
+    display: flex;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.card-1 {
+    font-family: "CeraProMedium";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.text-container {
+    margin-top: 0.5rem;
+}
+
+.text-container h4 {
+    margin-bottom: 0.7rem;
+}
+
+.text-container .shop a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+}
+
+.text-container .shop a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* /////////////////////////////////////////////// */
+
+
+
+@media (min-width:600px) {
+    .keep-in-touch-wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .left-side-content {
+        width: 75%;
+    }
+
+    .left-side-content .shop-now-btn {
+        margin-inline: 0;
+    }
+
+    .right-side-content {
+        width: 50%;
+    }
+}
+

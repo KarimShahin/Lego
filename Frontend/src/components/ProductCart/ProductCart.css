@@ -1,0 +1,125 @@
+.recommended-card{
+    border: 1px solid #c4c4c4;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    flex: 1 0 320px;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 320px;
+}
+
+.recommended-card .add-to-wishlist {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.recommended-card .add-to-wishlist span:nth-child(1) {
+    background-color: #f8f8f8;
+    position: relative;
+    border-radius: 100%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.recommended-card .add-to-wishlist i {
+    font-size: 1rem;
+    position: absolute;
+    color: #006db7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.recommended-card .image-container .product-card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.recommended-card .image-container .product-card-img:hover {
+    transform: scale(1.1);
+}
+
+.recommended-card-name {
+    font-family: "CeraProMedium";
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.recommended-card-name p {
+    margin-bottom: 0;
+}
+
+.recommended-card-name p a {
+    color: #333;
+}
+
+.review-stars-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    margin-block: 0;
+}
+
+.sliding {
+    margin-block-start: 1rem;
+    margin-inline: auto;
+}
+
+.card-price {
+    font-size: 1.125rem;
+    font-family: "CeraProBold";
+}
+
+.card-button-exist {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #ffcf00;
+    border-radius: 0.5rem;
+    margin-inline: auto;
+    transition: all 250ms ease-in-out;
+}
+
+.card-button-exist:hover {
+    background-color: #ffcf00cc;
+}
+
+.filter {
+    width: 30%;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.yellow-star {
+    color: #ffcf00;
+}
+
+.gray-star {
+    color: #ffcf0044;
+}
+
+@media (max-width:950px) {
+    .recommended-card {
+        width: 250px;
+    }
+}
+
+@media (max-width:750px) {
+    .recommended-card {
+        width: 200px;
+    }
+}

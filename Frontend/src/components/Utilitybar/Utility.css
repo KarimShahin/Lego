@@ -1,0 +1,107 @@
+a {
+	color: #006db7;
+	text-decoration: none;
+}
+.utility-bar {
+	background-color: #f8f8f8;
+	color: #343a40;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 1.875em;
+	font-size: 1rem;
+}
+.utility-bar-styles {
+	display: inline-flex;
+	font-size: 0.75rem;
+	border: none;
+	margin: 0.9375em 0;
+	border-radius: 3px;
+}
+.utility-bar-styles:nth-child(1) a {
+	text-transform: uppercase;
+	text-decoration: none;
+    display: flex;
+	gap: 0.3rem;
+	align-items: center;
+	padding: 0 0.625rem;
+	line-height: 1.5625rem;
+	color: #2c2c2c;
+    font-size: 0.75rem;
+}
+.utility-bar-styles:nth-child(1) a:hover {
+	background-color: #f8f8f8;
+}
+.utility-bar-styles:nth-child(2) {
+	color: #2c2c2c;
+    font-size: 0.75rem;
+	font-family: "CeraProLight";
+	line-height: 1.5rem;
+	display: inline-flex;
+	gap: 1.75rem;
+}
+.utility-bar-styles:nth-child(2) span,
+.utility-bar-styles:nth-child(2) a {
+	font-family: "CeraProMedium";
+    font-size: 0.75rem;
+	text-decoration: none;
+}
+.utility-bar-styles:nth-child(2) a:hover {
+	color: #006db7;	
+}
+.utility-bar-styles:nth-child(3) {
+    display: none;
+}
+.user-icon{
+	display: flex;
+    align-items: center;
+	gap: 0.5em;
+	color: #2c2c2c;
+	font-weight: 500;
+    font-size: 0.75rem;
+	text-decoration: none;
+}
+
+.utility-close-btn {
+	border: 0;
+	background-color: transparent;
+}
+
+.utility-logout {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.75rem;
+	font-family: "CeraProMedium";
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.utility-logout i {
+	font-size: 1rem;
+}
+
+.utility-logout:hover {
+	color: #1055af;
+}
+
+.hide {
+	display: none;
+}
+
+@media (max-width: 950px) {
+	.utility-bar {
+		display: none;
+	}
+}
+@media (max-width: 470px) {
+	.utility-bar {
+		display: none;
+	}
+    .utility-bar-styles {
+		display: none;
+		margin: 0.325rem 0;
+	}
+}

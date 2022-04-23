@@ -1,0 +1,58 @@
+.developer-card {
+    min-width: 200px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.developer-card .developer-image{
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+
+.developer-card .developer-image img {
+    max-width: 100%;
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.developer-card .developer-image::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: rgb(88, 223, 88);
+    box-shadow: 0 0 0 2px #fff,
+        0 0 1px 3px #fff;
+}
+
+.developer-card p {
+    font-size: 1rem;
+}
+
+.developer-card .social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.developer-card .social a {
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.developer-card .social a i {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,134 @@
+.list-group-item {
+    padding: 0.4rem 1rem;
+}
+.list-group-item-action:active {
+    background-color: #8d959d;
+}
+.center-vertical{
+   background-color: aqua;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+.inner-content {
+    padding: 0px 0px;
+    margin-left: 2%;
+}
+.nameOfBlock {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: rgb(51, 44, 44);
+}
+.acc-block {
+    background-color: rgb(248, 248, 248);
+    padding: 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0px;
+}
+.heading {
+    color: rgb(51, 44, 44);
+    font-size: 1.2rem;
+    line-height: 2rem;    
+    font-weight: 400;
+}
+.personal-text{
+    color: rgb(51, 44, 44);
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.wrapper-personal-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.personal-btn {
+    font-size: .9rem;
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1rem;
+    background-color: rgb(0, 109, 183);
+    color: white;
+    border-color: rgb(0, 109, 183);
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .personal-btn:hover{
+    background-color: white;
+    color: black;
+} */
+.personal-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    word-break: break-word;
+}
+.lego-account {
+    color: rgb(51, 44, 44);
+    font-size: .9rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+.address-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+.address-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0px;
+    border: 1px dotted rgb(224, 224, 224);
+    padding: 1rem;
+    height: 7rem;
+    cursor: pointer;
+}
+.address-svg {
+    color: rgb(117, 117, 117);
+    height: 42px;
+    width: 42px;
+}
+.add-address {
+    color: rgb(117, 117, 117);
+    margin-left: 1rem;
+}
+
+.list-group-item {
+    padding: 0.4rem 1rem;
+}
+.list-group-item-action:active {
+    background-color: #8d959d;
+}
+.center-vertical{
+   background-color: aqua;
+}
+@media screen and (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+    .content {
+      padding: 1.5rem 0px;
+    }
+  }
+  @media screen and (max-width:650px){
+    .wrapper-personal-btn{
+        flex-direction: column;
+    align-items: flex-start;
+    }
+    .personal-email{
+        margin-top: 0.625rem;
+    align-items: flex-start;
+    }
+  }

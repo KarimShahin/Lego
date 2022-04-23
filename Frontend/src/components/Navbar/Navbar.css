@@ -1,0 +1,363 @@
+.nav-container {
+	background-color: #ffcf00;
+	color: #2c2c2c;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.875rem;
+	text-transform: uppercase;
+	font-weight: 500;
+    font-size: 1.2rem;
+	height: 3.6875rem;
+	font-family: "CeraProMedium";
+}
+.nav-bar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    font-size: 1.2rem;
+}
+.nav-list {
+	display: flex;
+	font-size: 0.9275rem;
+	align-items: center;
+	list-style: none;
+	gap: 2.7rem;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+.nav-list a {
+    font-size: 1rem;
+	color: rgb(0, 0, 0);
+	line-height: 1.1875rem;
+	border-bottom: 3px solid transparent;
+	cursor: pointer;
+	text-decoration: none;
+	transition: border 750ms;
+}
+.nav-list a:hover {
+	color: rgb(0, 0, 0);
+	border-bottom-color: black;
+}
+.nav-list img {
+	width: 2.4375rem;
+	height: 2.4375rem;
+	max-width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+.nav-icons {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 0.75rem;
+}
+.nav-icons i {
+	color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.nav-list-item {
+	flex-shrink: 0;
+}
+
+.nav-icons i:hover {
+	color: rgb(0, 0, 0,0.6);
+}
+
+.cart-icon a {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+.cart-icon a:hover {
+	text-decoration: underline;
+}
+.cart-icon a span {
+	margin-right: 1rem;
+}
+
+/* searchbar */
+.content {
+	background: transparent;
+	width: 30vw;
+	height: 3.6875rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	line-height: 1.6;
+	position: relative;
+}
+
+.search-bar {
+	border-radius: 100vh;
+	display: flex;
+    align-items: center;
+    font-size: 0.5rem;
+	width:  40px;
+	height: 40px;
+	padding: 2px;
+	position: relative;
+	background: white;
+	margin-left: auto;
+	transition: width 1s cubic-bezier(0.18, 0.89, 0.32, 1.15);
+	overflow: hidden;
+}
+/* max-width: 450px
+max-width: 750px */
+
+.search-bar:focus-within {
+	width: 100%;
+}
+
+.search-bar:focus-within .search-bar-input {
+	opacity: 1;
+	cursor: initial;
+	width: calc(100% + 10px - 40px);
+}
+
+.search-bar:focus-within .search-bar-submit:focus,
+.search-bar:focus-within .search-bar-submit:hover {
+	outline: 0;
+}
+
+.search-bar-input {
+	flex-grow: 1;
+	border: 0;
+    font-size: 0.85rem;
+	padding: 0 0.5rem;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0;
+    height: 40px;
+	cursor: pointer;
+}
+
+.search-bar-input:focus {
+	outline: 0;
+}
+
+.search-bar-submit {
+	font-size: 0.9rem;
+	cursor: pointer;
+	border: 0;
+	background: transparent;
+	border-radius: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.75rem;
+	width: calc(40px - 5px);
+	height: calc(40px - 5px);
+}
+
+.nav-user-icon {
+	display: none;
+}
+
+.search-content {
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
+
+.nav-list-item.menu-icon {
+	display: none;
+}
+
+.nav-list a {
+	transition: 
+		border 250ms ease-in-out,
+		padding 500ms ease-in-out;
+}
+.nav-list a.active {
+	padding-bottom: 1rem;
+	border-bottom-color: black;
+	transition: 
+		border 250ms ease-in-out,
+		padding 500ms ease-in-out;
+}
+
+.nav-list a:hover.nav-logo {
+	border-color: transparent;
+}
+
+.nav-logo {
+	flex-shrink: 0;
+	width: max-content;
+}
+
+
+@media (max-width: 950px) {
+    .nav-container {
+		background: #fff;
+		height: 3.5rem;
+		border-bottom: 3px solid #ffcf00;
+        font-size: 0.75rem;
+	}
+	.nav-list-item {
+		display: none;
+	}
+	.nav-list img {
+		display: block;
+		width: 2.5rem;
+		height: 2.5rem;
+		max-width: 100%;
+		object-fit: cover;
+		cursor: pointer;
+	}
+	.nav-list {
+		align-items: center;
+		gap: 1rem;
+		padding-left: 0;
+	}
+
+	.nav-bar .nav-list div {
+		display: flex;
+		align-items: flex-end;
+		font-family: "CeraProLight";
+		font-size: 0.5rem;
+		position: relative;
+		height: 1.5rem;
+		cursor: pointer;
+	}
+	.nav-bar .nav-list div::before,
+	.nav-bar .nav-list div::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 0.075rem;
+		background: black;
+		left: 0;
+		right: 0;
+		border-radius: 100vh;
+	}
+	.nav-bar .nav-list div::before {
+		top: 3px;
+	}
+	.nav-bar .nav-list div::after {
+		top: 6px;
+	}
+
+    .nav-icons {
+        gap:0.5rem
+    }
+
+	.nav-user-icon {
+		display: inline-block;
+	}
+	.search-bar:focus-within {
+		border: 1px solid rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	}
+    .menu-icon sub{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .nav-container {
+		background: #fff;
+		height: 3.5rem;
+		border-bottom: 3px solid #ffcf00;
+	}
+	.nav-list-item {
+		display: none;
+	}
+	.nav-list img {
+		display: block;
+		width: 2.5rem;
+		height: 2.5rem;
+		max-width: 100%;
+		object-fit: cover;
+		cursor: pointer;
+	}
+
+	.content {
+		width: 40px;
+		margin-right: 0;
+	}
+	.content:focus-within {
+		position: fixed;
+        z-index: 100;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin-right: 0;
+		background: #ffcf00;
+		height: 100vh;
+		align-items: flex-start;
+	}
+
+	.content:focus-within .search-content {
+		display: block;
+		background: #fff;
+	}
+	.search-bar {
+		margin-right: 165px;
+		background: #fff;
+	}
+	.search-bar:focus-within {
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		margin-top: 3px;
+		margin-right: 0;
+		border-bottom: 1px solid rgb(216, 216, 216);
+	}
+	.search-bar-input {
+		background: #fff;
+	}
+	.nav-container {
+		padding: 0 1rem;
+	}
+	.nav-user-icon {
+		display: inline-block;
+	}
+	.nav-list {
+		align-items: center;
+		gap: 1.5em;
+	}
+	.nav-bar .nav-list div {
+		display: flex;
+		align-items: flex-end;
+		font-family: "CeraProLight";
+		font-size: 0.7em;
+		position: relative;
+		height: 1.5rem;
+		cursor: pointer;
+	}
+	.nav-bar .nav-list div::before,
+	.nav-bar .nav-list div::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 0.075rem;
+		background: black;
+		left: 0;
+		right: 0;
+		border-radius: 100vh;
+	}
+	.nav-bar .nav-list div::before {
+		top: 3px;
+	}
+	.nav-bar .nav-list div::after {
+		top: 6px;
+	}
+
+}
